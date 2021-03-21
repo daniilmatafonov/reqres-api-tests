@@ -64,7 +64,6 @@ public class ReqResTest extends BaseTest {
 
     @Test
     public void createUser() {
-
         final String emailAddress = faker.internet().emailAddress();
         UserModel userModel = new UserModel(name, emailAddress, pswrd, "Working class hero");
         final String userRegJson = gson.toJson(userModel);
