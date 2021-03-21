@@ -12,7 +12,8 @@ repositories {
 def allureVersion = "2.13.8",
     junitVersion = "5.7.0",
     ownerVersion = "1.0.12",
-    restAssuredVersion = "4.3.3"
+    restAssuredVersion = "4.3.3",
+    javaFakerVersion = "1.0.2"
 
 allure {
     version = "${allureVersion}"
@@ -24,6 +25,8 @@ allure {
 }
 dependencies {
     testImplementation(
+            "com.google.code.gson:gson:2.8.6",
+            "com.github.javafaker:javafaker:$javaFakerVersion",
             "io.qameta.allure:allure-selenide:$allureVersion",
             "io.rest-assured:rest-assured:$restAssuredVersion",
             "io.qameta.allure:allure-rest-assured:$allureVersion",
